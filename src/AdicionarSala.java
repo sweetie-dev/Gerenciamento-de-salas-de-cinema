@@ -25,8 +25,7 @@ public class AdicionarSala extends javax.swing.JFrame {
     
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents() {//GEN-BEGIN:initComponents
 
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -64,17 +63,16 @@ public class AdicionarSala extends javax.swing.JFrame {
 
         jLabel3.setText("Capacidade");
 
-        btnAdicionarSala.setText("\u2795  Adicionar Sala");
+        btnAdicionarSala.setText("Adicionar Sala");
         btnAdicionarSala.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAdicionarSalaActionPerformed(evt);
             }
         });
 
-        sair.setBackground(new java.awt.Color(27, 38, 59));
         sair.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        sair.setForeground(new java.awt.Color(224, 168, 0));
-        sair.setText("\u2190  Voltar ao Gerenciamento de Salas");
+        sair.setForeground(new java.awt.Color(0, 0, 102));
+        sair.setText("< Voltar ao Gerenciamento de Salas");
         sair.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         sair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,7 +127,7 @@ public class AdicionarSala extends javax.swing.JFrame {
         );
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }//GEN-END:initComponents
 
     private void btnAdicionarSalaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdicionarSalaActionPerformed
         int numero = Integer.parseInt(txtNumero.getText());
