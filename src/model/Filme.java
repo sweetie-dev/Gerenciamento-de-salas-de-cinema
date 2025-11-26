@@ -12,6 +12,8 @@ public class Filme {
     private String titulo;
     private String genero;
     private int duracao;
+    private int id;
+
 
     public Filme(String titulo, String genero, int duracao) {
         this.titulo = titulo;
@@ -43,6 +45,17 @@ public class Filme {
         this.duracao = duracao;
     }
 
+        public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+        public String getNome() {
+        return titulo;
+    }
     @Override
     public String toString() {
     return "Filme: " +

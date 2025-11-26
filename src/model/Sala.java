@@ -11,30 +11,40 @@ package model;
 public class Sala {
     private int numero;
     private int capacidade;
+    private int id;
 
+    // Construtor com id
+    public Sala(int id, int numero, int capacidade) {
+        this.id = id;
+        this.numero = numero;
+        this.capacidade = capacidade;
+    }
+
+    // Construtor sem id
     public Sala(int numero, int capacidade) {
         this.numero = numero;
         this.capacidade = capacidade;
     }
 
-    public int getNumero() {
-        return numero;
-    }
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-    public int getCapacidade() {
-        return capacidade;
-    }
-    public void setCapacidade(int capacidade) {
-        this.capacidade = capacidade;
+    // Getters e setters
+    public int getId() { return id; }
+    public void setId(int id) { this.id = id; }
+    public int getNumero() { return numero; }
+    public void setNumero(int numero) { this.numero = numero; }
+    public int getCapacidade() { return capacidade; }
+    public void setCapacidade(int capacidade) { this.capacidade = capacidade; }
+
+    // getNome necessário para o GerenciadorSalas
+    public String getNome() {
+        return "Sala " + numero;
     }
 
+    // toString atualizado
     @Override
     public String toString() {
         return "Sala: " +
-                "numero=" + numero +
-                ", capacidade=" + capacidade +
-                '.';
+               (id != 0 ? "id=" + id + ", " : "") +
+               "numero=" + numero +
+               ", capacidade=" + capacidade + '.';
     }
 }
